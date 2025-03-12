@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - COMSATS</title>
+    <link rel="icon" type="image/png" href="COMSATS-University-logo.png">
+    <style>
+        /* Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('c4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+	    position: relative;
+        }
+
+  /* Dark Overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0.4, 0.4, 0.4, 0.4);
+            z-index: -1;
+        }
+
+        /* Header */
+        .header {
+            background-color: #002147; 
+	    color: white;
+            padding: 15px;
+	    display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header img {
+            width: 60px;
+            height: 60px;
+            margin-right: 25px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #002147;
+            text-align: center;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #FDB913;
+            color: black;
+        }
+
+        /* Main Content */
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 33, 71, 0.8); 
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #FDB913;
+        }
+
+        /* Form Styles */
+        form {
+            text-align: left;
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: auto;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #FDB913;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #ffcc33;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+	<img src="COMSATS-University-logo.png" alt="COMSATS Logo">
+	COMSATS University Islamabad
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="admissions.html" style="border-bottom: 3px solid #FDB913;">Admissions</a>
+        <a href="hostels.html">Hostels</a>
+        <a href="cafeteria.html">Cafeteria</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Admission Process</h1>
+        <p>Follow these steps to apply for admission at COMSATS University.</p>
+        <ul>
+            <li><b>Application:</b> Fill out the online form.</li>
+            <li><b>Eligibility:</b> Check your eligibility for the program.</li>
+            <li><b>Documents Required:</b> Submit necessary documents.</li>
+            <li><b>Interview:</b> Shortlisted candidates will be contacted.</li>
+            <li><b>Final Selection:</b> Admission confirmation will be sent via email.</li>
+        </ul>
+
+        <h2>Apply for Admission</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="program">Select Program:</label>
+            <select id="program" name="program">
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 COMSATS University. All Rights Reserved.
+    </div>
+
+</body>
+</html>
